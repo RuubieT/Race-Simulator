@@ -11,3 +11,16 @@ C:\Users\rubru\source\repos\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.
 C:\Users\rubru\source\repos\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.dll
 C:\Users\rubru\source\repos\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.pdb
 C:\Users\rubru\source\repos\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.genruntimeconfig.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\Race Simulator.exe
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\Race Simulator.deps.json
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\Race Simulator.runtimeconfig.json
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\Race Simulator.runtimeconfig.dev.json
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\Race Simulator.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\Race Simulator.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.csprojAssemblyReference.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.AssemblyInfoInputs.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.AssemblyInfo.cs
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.csproj.CoreCompileInputs.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.genruntimeconfig.cache

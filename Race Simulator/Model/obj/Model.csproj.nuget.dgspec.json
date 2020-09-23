@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rubru\\source\\repos\\Race Simulator\\Model\\Model.csproj": {}
+    "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rubru\\source\\repos\\Race Simulator\\Model\\Model.csproj": {
+    "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rubru\\source\\repos\\Race Simulator\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\rubru\\source\\repos\\Race Simulator\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\rubru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rubru\\source\\repos\\Race Simulator\\Model\\obj\\",
+        "outputPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rubru\\AppData\\Roaming\\NuGet\\NuGet.Config",
