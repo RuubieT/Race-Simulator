@@ -8,11 +8,24 @@ namespace Controller
 {
     public static class Data
     {
-        public static Competition competition;
+        public static Competition competitite;
+        public static Track track;
 
-        public static void IComponentInitializer()
+        public static void Initialize()
         {
+            competitite = new Competition();
+            VoegDeelnemersToe();
 
+        }
+
+        public static void VoegDeelnemersToe()
+        {
+            competitite.Participants.Add();
+        }
+
+        public static void VoegTrackToe()
+        {
+            competitite.NextTrack.Sections();
         }
 
     }
