@@ -9,9 +9,15 @@ namespace Model
         public string Name;
         public LinkedList<Section> Sections;
 
+        public Track()
+        {
+
+        }
 
         public Track (string name, SectionTypes[] sections)
         {
+            Name = name;
+            Sections = new LinkedList<Section>();
 
         }
     }

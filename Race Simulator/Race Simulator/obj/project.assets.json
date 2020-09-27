@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\rubru\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj",
+      "projectUniqueName": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj",
       "projectName": "Race Simulator",
-      "projectPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj",
-      "packagesPath": "C:\\Users\\rubru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Race Simulator\\obj\\",
+      "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Race Simulator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rubru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

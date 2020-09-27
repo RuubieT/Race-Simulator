@@ -15,17 +15,19 @@ namespace Controller
         {
             competitite = new Competition();
             VoegDeelnemersToe();
+            VoegTrackToe();
 
         }
 
         public static void VoegDeelnemersToe()
         {
-            competitite.Participants.Add();
+            competitite.Participants.Add(new Driver());
         }
 
         public static void VoegTrackToe()
         {
-            competitite.NextTrack.Sections();
+            competitite.Tracks.Enqueue(new Track());
+
         }
 
     }

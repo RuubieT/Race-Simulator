@@ -8,12 +8,16 @@ namespace Model
     {
         public Competition()
         {
-
+            Participants = new List<IParticipant>();
+            Tracks = new Queue<Track>();
         }
 
         public List<IParticipant> Participants;
-        Queue<Track> Tracks;
-        public Track NextTrack;
+        public Queue<Track> Tracks;
+        public Track NextTrack()
+        {
+
+        }
 
 
     }

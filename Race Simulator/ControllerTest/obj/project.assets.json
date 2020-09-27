@@ -1225,6 +1225,26 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
+      "Race Simulator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Race Simulator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Race Simulator.dll": {}
+        }
       }
     }
   },
@@ -4618,29 +4638,41 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
+    "Race Simulator/1.0.0": {
+      "type": "project",
+      "path": "../Race Simulator/Race Simulator.csproj",
+      "msbuildProject": "../Race Simulator/Race Simulator.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.4.0",
+      "Model >= 1.0.0",
       "NUnit3TestAdapter >= 3.15.1",
+      "Race Simulator >= 1.0.0",
       "nunit >= 3.12.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rubru\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "projectUniqueName": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
       "projectName": "ControllerTest",
-      "projectPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
-      "packagesPath": "C:\\Users\\rubru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\obj\\",
+      "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rubru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4652,7 +4684,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj": {
+              "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj"
+            },
+            "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj": {
+              "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4692,7 +4731,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
