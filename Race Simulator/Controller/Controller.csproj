@@ -7,7 +7,6 @@
   <ItemGroup>
     <ProjectReference Include="..\ControllerTest\ControllerTest.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
-    <ProjectReference Include="..\Race Simulator\Race Simulator.csproj" />
   </ItemGroup>
 
 </Project>

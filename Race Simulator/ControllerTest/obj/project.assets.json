@@ -1235,16 +1235,6 @@
         "runtime": {
           "bin/placeholder/Model.dll": {}
         }
-      },
-      "Race Simulator/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/Race Simulator.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Race Simulator.dll": {}
-        }
       }
     }
   },
@@ -4643,11 +4633,6 @@
       "type": "project",
       "path": "../Model/Model.csproj",
       "msbuildProject": "../Model/Model.csproj"
-    },
-    "Race Simulator/1.0.0": {
-      "type": "project",
-      "path": "../Race Simulator/Race Simulator.csproj",
-      "msbuildProject": "../Race Simulator/Race Simulator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4655,7 +4640,6 @@
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "Model >= 1.0.0",
       "NUnit3TestAdapter >= 3.15.1",
-      "Race Simulator >= 1.0.0",
       "nunit >= 3.12.0"
     ]
   },
@@ -4687,9 +4671,6 @@
           "projectReferences": {
             "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj": {
               "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj"
-            },
-            "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj": {
-              "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Race Simulator\\Race Simulator.csproj"
             }
           }
         }

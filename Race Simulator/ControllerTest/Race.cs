@@ -23,6 +23,13 @@ namespace ControllerTest
 
         }
 
+        public Race (Track t)
+        {
+            track = t;
+        }
+
+
+
        
         public void GetSectionData(Section s)
         {
