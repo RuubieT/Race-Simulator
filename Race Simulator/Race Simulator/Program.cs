@@ -1,13 +1,28 @@
 ﻿using System;
+using Controller;
+using Model;
+
 
 namespace Race_Simulator
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Test GIT");
+            
+            Data.Initialize();
+            Data.NextRace();
+
+            
+            Console.WriteLine(Data.CurrentRace.track.Name);
+
+            for (; ; )
+            {
+                System.Threading.Thread.Sleep(100);
+            }
+
+
         }
+        
     }
 }
