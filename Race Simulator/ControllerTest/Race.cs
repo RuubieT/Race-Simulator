@@ -17,8 +17,11 @@ namespace ControllerTest
         public Race(Track t, List<IParticipant> participants)
         {
             track = t;
-            participants = new List<IParticipant>();
             Participants = participants;
+            foreach (IParticipant p in participants)
+            {
+                Participants.Add(p);
+            }
             _random = new Random(DateTime.Now.Millisecond);
 
         }

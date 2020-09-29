@@ -7,18 +7,26 @@ namespace Model
     public class Track
     {
         public string Name;
+        public Section section;
         public LinkedList<Section> Sections;
 
-        public Track()
+        public Track(string name)
         {
-
+            Name = name;
         }
 
         public Track (string name, SectionTypes[] sections)
         {
             Name = name;
             Sections = new LinkedList<Section>();
-
+            foreach (SectionTypes s in sections)
+            {
+                section = new Section(s);
+                Sections.AddLast(section);
+            }
+            
         }
+
+        
     }
 }

@@ -28,8 +28,7 @@ namespace Controller
 
         public static void VoegTrackToe()
         {
-            competitite.Tracks.Enqueue(new Track());
-
+            competitite.Tracks.Enqueue(new Track("Track 1"));
         }
 
         public static void NextRace()
@@ -37,7 +36,7 @@ namespace Controller
            competitite.NextTrack();
            if (competitite.Tracks != null){
                 CurrentRace = new Race(track);
-            }
+           }
                  
 
         }
