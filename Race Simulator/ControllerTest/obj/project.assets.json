@@ -4644,19 +4644,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\rubru\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "projectUniqueName": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
       "projectName": "ControllerTest",
-      "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\obj\\",
+      "projectPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "packagesPath": "C:\\Users\\rubru\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rubru\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4669,8 +4669,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj": {
-              "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj"
+            "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj"
             }
           }
         }
@@ -4712,7 +4712,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
