@@ -17,7 +17,6 @@ namespace ControllerTest
         public Race(Track t, List<IParticipant> participants)
         {
             track = t;
-            Participants = participants;
             foreach (IParticipant p in participants)
             {
                 Participants.Add(p);
@@ -27,14 +26,6 @@ namespace ControllerTest
 
         }
 
-        public Race (Track t)
-        {
-            track = t;
-        }
-
-
-
-       
         public void GetSectionData(Section s)
         {
             if (!_positions.TryGetValue(s, out SectionData sectionData))

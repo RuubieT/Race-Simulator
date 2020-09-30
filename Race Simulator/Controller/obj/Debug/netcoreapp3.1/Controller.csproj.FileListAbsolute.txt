@@ -16,3 +16,21 @@ D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Controller
 D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete
 D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.dll
 D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\nunit.engine.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Controller.deps.json
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Controller.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Controller.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\ControllerTest.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\ControllerTest.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csprojAssemblyReference.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfoInputs.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfo.cs
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CoreCompileInputs.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.pdb

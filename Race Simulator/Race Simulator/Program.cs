@@ -14,9 +14,9 @@ namespace Race_Simulator
             
             Data.Initialize();
             Data.NextRace();
-
-            
-            Console.WriteLine(Data.competitite.Tracks.ToString());
+            Console.WriteLine(Data.CurrentRace.track.Name);
+            Data.NextRace();
+            Console.WriteLine(Data.CurrentRace.track.Name);
 
             for (; ; )
             {

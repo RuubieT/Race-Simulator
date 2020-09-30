@@ -7,3 +7,12 @@ D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Model\obj\
 D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.dll
 D:\Admin\Bureaublad\School\Programmeren\Race Simulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Model\obj\Debug\netcoreapp3.1\Model.pdb

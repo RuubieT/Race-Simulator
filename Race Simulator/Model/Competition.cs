@@ -19,11 +19,11 @@ namespace Model
         
         public Track NextTrack()
         {
+   
             
-            if (Tracks.Count > 0)
+            while (Tracks.Count > 0)
             {
-                Console.WriteLine($"De huidige track = {Tracks.Dequeue()}");
-                 
+               return Tracks.Dequeue();
             }
             return null;
             
