@@ -12,9 +12,18 @@ namespace Model
 
         }
 
-        public int Quality { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Performance { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Speed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public bool IsBroken { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Quality { get; set ; }
+        public int Performance { get; set; }
+        public int Speed { get; set; }
+        public bool IsBroken { get; set; }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(" ");
+            return sb.ToString();
+        }
+
+
     }
 }

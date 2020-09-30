@@ -9,12 +9,14 @@ namespace Race_Simulator
     {
         static void Main(string[] args)
         {
+       
+
             
             Data.Initialize();
             Data.NextRace();
 
             
-            Console.WriteLine(Data.CurrentRace.track.Name);
+            Console.WriteLine(Data.competitite.Tracks.ToString());
 
             for (; ; )
             {

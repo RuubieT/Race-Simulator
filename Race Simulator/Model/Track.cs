@@ -10,7 +10,7 @@ namespace Model
         public Section section;
         public LinkedList<Section> Sections;
 
-        public Track(string name)
+       public Track(string name)
         {
             Name = name;
         }
@@ -27,6 +27,12 @@ namespace Model
             
         }
 
-        
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(" ");
+            return sb.ToString();
+        }
+
     }
 }

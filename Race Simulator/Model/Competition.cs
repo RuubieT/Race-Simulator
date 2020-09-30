@@ -20,15 +20,21 @@ namespace Model
         public Track NextTrack()
         {
             
-            if (Tracks.Count >= 0)
+            if (Tracks.Count > 0)
             {
-                return Tracks.Dequeue();
-            } else
-            {
-                return null;
+                Console.WriteLine($"De huidige track = {Tracks.Dequeue()}");
+                 
             }
+            return null;
             
 
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(" ");
+            return sb.ToString();
         }
 
 

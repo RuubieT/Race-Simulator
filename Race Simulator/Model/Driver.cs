@@ -14,9 +14,16 @@ namespace Model
         }
 
 
-        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Points { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IEquipment Equipment { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public TeamColors TeamColor { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Name { get; set; }
+        public int Points { get; set; }
+        public IEquipment Equipment { get; set; }
+        public TeamColors TeamColor { get; set; }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(" ");
+            return sb.ToString();
+        }
     }
 }

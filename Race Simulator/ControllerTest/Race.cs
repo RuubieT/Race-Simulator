@@ -23,6 +23,7 @@ namespace ControllerTest
                 Participants.Add(p);
             }
             _random = new Random(DateTime.Now.Millisecond);
+            _positions = new Dictionary<Section, SectionData>();
 
         }
 
