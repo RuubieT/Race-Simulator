@@ -11,7 +11,7 @@ namespace ControllerTest
         public List<IParticipant> Participants;
         public DateTime StartTime;
 
-        private Random _random;
+        private Random _random = new Random(DateTime.Now.Millisecond);
         private Dictionary<Section, SectionData> _positions;
 
         public Race(Track t, List<IParticipant> participants)
@@ -21,7 +21,7 @@ namespace ControllerTest
             {
                 Participants.Add(p);
             }
-            _random = new Random(DateTime.Now.Millisecond);
+           
             _positions = new Dictionary<Section, SectionData>();
 
         }

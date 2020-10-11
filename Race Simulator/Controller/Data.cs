@@ -10,19 +10,13 @@ namespace Controller
     public static class Data
     {
         public static Competition competitite;
-        public static Track track;
         public static Race CurrentRace;
-
         
-
-
         public static void Initialize()
         {
             competitite = new Competition();
             VoegDeelnemersToe();
             VoegTrackToe();
-
-
         }
 
         public static void VoegDeelnemersToe()
@@ -45,7 +39,7 @@ namespace Controller
 
         public static void VoegTrackToe()
         {
-            SectionTypes[] sections1 = new SectionTypes[]
+            SectionTypes[] sections = new SectionTypes[]
             {
                 SectionTypes.Straight,
                 SectionTypes.LeftCorner,
@@ -53,10 +47,10 @@ namespace Controller
                 SectionTypes.StartGrid,
                 SectionTypes.Finish
             };
-            Track track1 = new Track("Track 1a", sections1);
-            Track track2 = new Track("Track 2b", sections1);
-            Track track3 = new Track("Track 3c", sections1);
-            Track track4 = new Track("Track 4", sections1);
+            Track track1 = new Track("Track 1a", sections);
+            Track track2 = new Track("Track 2b", sections);
+            Track track3 = new Track("Track 3c", sections);
+            Track track4 = new Track("Track 4", sections);
 
             competitite.Tracks.Enqueue(track1);
             competitite.Tracks.Enqueue(track2);
@@ -66,12 +60,9 @@ namespace Controller
 
         public static void NextRace()
         {
-            
             List<IParticipant> Participants = new List<IParticipant>();
 
             CurrentRace = new Race(competitite.NextTrack(), Participants);
-         
-                 
 
         }
 

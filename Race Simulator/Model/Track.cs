@@ -11,25 +11,31 @@ namespace Model
         public LinkedList<Section> Sections;
 
        
-
         public Track (string name, SectionTypes[] sections)
         {
             Name = name;
-            Sections = new LinkedList<Section>();
+            Sections = ZetArrayOm(sections);
+
+        }
+
+        public LinkedList<Section> ZetArrayOm(SectionTypes[] sections)
+        {
+            LinkedList<Section> Sections = new LinkedList<Section>();
             foreach (SectionTypes s in sections)
             {
                 section = new Section(s);
                 Sections.AddLast(section);
             }
-            
+            return Sections;
         }
 
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.AppendLine(" ");
-            return sb.ToString();
-        }
+
+        //public override string ToString()
+        //{
+        //    var sb = new StringBuilder();
+        //    sb.AppendLine(" ");
+        //    return sb.ToString();
+        //}
 
     }
 }

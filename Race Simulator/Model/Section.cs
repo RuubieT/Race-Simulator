@@ -16,17 +16,16 @@ namespace Model
     {
         public SectionTypes SectionType { get; set; }
         
-        
         public Section(SectionTypes sectiontype)
         {
             SectionType = sectiontype;
         }
 
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.AppendLine(" ");
-            return sb.ToString();
-        }
+        //public override string ToString()
+        //{
+        //    var sb = new StringBuilder();
+        //    sb.AppendLine(" ");
+        //    return sb.ToString();
+        //}
     }
 }
