@@ -39,28 +39,46 @@ namespace Controller
 
         public static void VoegTrackToe()
         {
-            SectionTypes[] sections = new SectionTypes[]
+            SectionTypes[] basic = new SectionTypes[]
             {
-                SectionTypes.Straight,
-                SectionTypes.LeftCorner,
-                SectionTypes.RightCorner,
-                SectionTypes.StartGrid,
-                SectionTypes.Finish
+                SectionTypes.StartGridHorizontal, 
+                SectionTypes.StartGridHorizontal, 
+                SectionTypes.StartGridHorizontal, 
+                SectionTypes.FinishHorizontal, 
+                SectionTypes.WestZuid,
+                SectionTypes.StraightVertical, 
+                SectionTypes.StraightVertical, 
+                SectionTypes.StraightVertical, 
+                SectionTypes.NoordWest,
+                SectionTypes.StraightHorizontal, 
+                SectionTypes.StraightHorizontal, 
+                SectionTypes.StraightHorizontal, 
+                SectionTypes.OostNoord,
+                SectionTypes.StraightVertical, 
+                SectionTypes.StraightVertical, 
+                SectionTypes.StraightVertical, 
+                SectionTypes.ZuidOost
             };
-            Track track1 = new Track("Track 1a", sections);
-            Track track2 = new Track("Track 2b", sections);
-            Track track3 = new Track("Track 3c", sections);
-            Track track4 = new Track("Track 4", sections);
+            Track oostendorp = new Track("Oostendorp",
+                new SectionTypes[] { SectionTypes.StartGridHorizontal, SectionTypes.StartGridHorizontal, SectionTypes.StartGridHorizontal,SectionTypes.FinishHorizontal, SectionTypes.StraightHorizontal,
+                    SectionTypes.WestNoord, SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.ZuidOost,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.WestZuid,SectionTypes.StraightVertical, SectionTypes.NoordWest,
+                    SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,
+                    SectionTypes.OostZuid,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical, SectionTypes.NoordOost,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal, SectionTypes.WestZuid,
+                    SectionTypes.NoordWest, SectionTypes.OostZuid, SectionTypes.NoordOost, SectionTypes.WestZuid, SectionTypes.NoordWest,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,
+                    SectionTypes.OostNoord,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical, SectionTypes.ZuidOost,SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal});
 
-            competitite.Tracks.Enqueue(track1);
+            
+            Track track2 = new Track("Track 2", basic);
+
+
+            competitite.Tracks.Enqueue(oostendorp);
             competitite.Tracks.Enqueue(track2);
-            competitite.Tracks.Enqueue(track3);
-            competitite.Tracks.Enqueue(track4);
+           
         }
 
         public static void NextRace()
         {
-            List<IParticipant> Participants = new List<IParticipant>();
+            List<IParticipant> Participants = competitite.Participants;
 
             CurrentRace = new Race(competitite.NextTrack(), Participants);
 

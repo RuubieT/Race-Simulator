@@ -29,13 +29,5 @@ namespace Model
             return Sections;
         }
 
-
-        //public override string ToString()
-        //{
-        //    var sb = new StringBuilder();
-        //    sb.AppendLine(" ");
-        //    return sb.ToString();
-        //}
-
     }
 }

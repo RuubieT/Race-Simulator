@@ -11,30 +11,32 @@ namespace ControllerTest
         public List<IParticipant> Participants;
         public DateTime StartTime;
 
-        private Random _random = new Random(DateTime.Now.Millisecond);
+        private Random _random;
         private Dictionary<Section, SectionData> _positions;
 
         public Race(Track t, List<IParticipant> participants)
         {
             track = t;
-            foreach (IParticipant p in participants)
-            {
-                Participants.Add(p);
-            }
+            
            
             _positions = new Dictionary<Section, SectionData>();
-
+            _random = new Random(DateTime.Now.Millisecond);
+            StartPositie(t,participants);
+          
+            
         }
 
-        public void GetSectionData(Section s)
+        public SectionData GetSectionData(Section s)
         {
-            if (!_positions.TryGetValue(s, out SectionData sectionData))
+            SectionData value;
+            if (_positions.TryGetValue(s, out value))
             {
-                return;
+                return value;
             }
             else
             {
-                _positions.Add(s, sectionData);
+                _positions.Add(s, new SectionData());
+                return _positions[s];
             }
         }
 
@@ -43,9 +45,20 @@ namespace ControllerTest
         {
             foreach (IParticipant p in Participants)
             {
-                p.Equipment.Quality = 4;
-                p.Equipment.Performance = 1;
+                p.Equipment.Quality = _random.Next(1,5);
+                p.Equipment.Performance = _random.Next(1,5);
             }
+        }
+
+        public void StartPositie(Track t, List<IParticipant> participants)
+        {
+            
+            foreach (IParticipant p in participants)
+            {
+                GetSectionData(t.section);
+
+            }
+
         }
     }
 }

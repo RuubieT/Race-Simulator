@@ -20,13 +20,5 @@ namespace Model
             IsBroken = isbroken;
         }
 
-        //public override string ToString()
-        //{
-        //    var sb = new StringBuilder();
-        //    sb.AppendLine(" ");
-        //    return sb.ToString();
-        //}
-
-
     }
 }

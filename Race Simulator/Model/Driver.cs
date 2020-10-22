@@ -19,12 +19,6 @@ namespace Model
             Equipment = equipment;
             TeamColor = teamcolor;
         }
-        
-        //public override string ToString()
-        //{
-        //    var sb = new StringBuilder();
-        //    sb.AppendLine(" ");
-        //    return sb.ToString();
-        //}
+  
     }
 }

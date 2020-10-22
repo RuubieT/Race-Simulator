@@ -6,26 +6,36 @@ namespace Model
 {
     public enum SectionTypes
     {
-        Straight,
-        LeftCorner,
-        RightCorner,
-        StartGrid,
-        Finish
+        StraightHorizontal,
+        StraightVertical,
+
+        NoordOost,
+        NoordWest,
+
+        OostNoord,
+        OostZuid,
+
+        ZuidOost,
+        ZuidWest,
+
+        WestNoord,
+        WestZuid,
+
+        StartGridHorizontal,
+        StartGridVertical,
+
+        FinishHorizontal,
+        FinishVertical
     }
     public class Section
     {
         public SectionTypes SectionType { get; set; }
-        
+
         public Section(SectionTypes sectiontype)
         {
             SectionType = sectiontype;
         }
+        
 
-        //public override string ToString()
-        //{
-        //    var sb = new StringBuilder();
-        //    sb.AppendLine(" ");
-        //    return sb.ToString();
-        //}
     }
 }
