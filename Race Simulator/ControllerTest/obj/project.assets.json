@@ -4644,19 +4644,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rubru\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "projectUniqueName": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
       "projectName": "ControllerTest",
-      "projectPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
-      "packagesPath": "C:\\Users\\rubru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\ControllerTest\\obj\\",
+      "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rubru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4669,8 +4669,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\rubru\\OneDrive\\Documenten\\RaceSimulator\\Race Simulator\\Model\\Model.csproj"
+            "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj": {
+              "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj"
             }
           }
         }
