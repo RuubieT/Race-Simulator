@@ -315,8 +315,9 @@ D:\Bureaublad\Race sim\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\Mod
 D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.csprojAssemblyReference.cache
 D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.AssemblyInfoInputs.cache
 D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.AssemblyInfo.cs
-D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.csproj.CoreCompileInputs.cache
 D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.csproj.CopyComplete
 D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.dll
 D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.pdb
 D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.genruntimeconfig.cache
+D:\Bureaublad\Race sim\Race Simulator\Race Simulator\bin\Debug\netcoreapp3.1\nunit.engine.core.dll
+D:\Bureaublad\Race sim\Race Simulator\Race Simulator\obj\Debug\netcoreapp3.1\Race Simulator.csproj.CoreCompileInputs.cache

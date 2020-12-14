@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="Nunit3TestAdapter" Version="3.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ControllerTest\ControllerTest.csproj" />
     <ProjectReference Include="..\Controller\Controller.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />

@@ -379,7 +379,7 @@
           "lib/netstandard1.0/_._": {}
         },
         "build": {
-          "build/netstandard2.0/_._": {}
+          "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -436,10 +436,10 @@
           "lib/netstandard2.0/nunit.framework.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/NUnit.props": {}
         }
       },
-      "NUnit3TestAdapter/3.15.1": {
+      "NUnit3TestAdapter/3.17.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.DotNet.InternalAbstractions": "1.0.0",
@@ -453,7 +453,7 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "build": {
-          "build/netcoreapp2.0/_._": {}
+          "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -1918,10 +1918,10 @@
         "nunit.nuspec"
       ]
     },
-    "NUnit3TestAdapter/3.15.1": {
-      "sha512": "gqy0llGjhJYq9ebFvtbmBcF/MY8z5kcTIxYs+eXwp2d4Ntha8pSPxUzryvBm7H46VbWI6FS5/XNbxwiQpe88vQ==",
+    "NUnit3TestAdapter/3.17.0": {
+      "sha512": "I9MNvK+GM2yXrHPitwZkAZKU9sYI2OO/8wKC+VuBD7V3z+ySQ1pSopX/urr0ooedI8/TIcajYPRO4vGRr7AM8A==",
       "type": "package",
-      "path": "nunit3testadapter/3.15.1",
+      "path": "nunit3testadapter/3.17.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1930,18 +1930,15 @@
         "build/net35/NUnit3.TestAdapter.pdb",
         "build/net35/NUnit3TestAdapter.props",
         "build/net35/nunit.engine.api.dll",
+        "build/net35/nunit.engine.core.dll",
         "build/net35/nunit.engine.dll",
-        "build/netcoreapp1.0/NUnit3.TestAdapter.dll",
-        "build/netcoreapp1.0/NUnit3.TestAdapter.pdb",
-        "build/netcoreapp1.0/NUnit3TestAdapter.props",
-        "build/netcoreapp1.0/nunit.engine.api.dll",
-        "build/netcoreapp1.0/nunit.engine.dll",
-        "build/netcoreapp2.0/NUnit3.TestAdapter.dll",
-        "build/netcoreapp2.0/NUnit3.TestAdapter.pdb",
-        "build/netcoreapp2.0/NUnit3TestAdapter.props",
-        "build/netcoreapp2.0/nunit.engine.api.dll",
-        "build/netcoreapp2.0/nunit.engine.dll",
-        "nunit3testadapter.3.15.1.nupkg.sha512",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp2.1/NUnit3TestAdapter.props",
+        "build/netcoreapp2.1/nunit.engine.api.dll",
+        "build/netcoreapp2.1/nunit.engine.core.dll",
+        "build/netcoreapp2.1/nunit.engine.dll",
+        "nunit3testadapter.3.17.0.nupkg.sha512",
         "nunit3testadapter.nuspec"
       ]
     },
@@ -4677,7 +4674,9 @@
     ".NETCoreApp,Version=v3.1": [
       "Controller >= 1.0.0",
       "ControllerTest >= 1.0.0",
-      "Model >= 1.0.0"
+      "Model >= 1.0.0",
+      "NUnit >= 3.12.0",
+      "Nunit3TestAdapter >= 3.17.0"
     ]
   },
   "packageFolders": {
@@ -4726,6 +4725,16 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[3.12.0, )"
+          },
+          "Nunit3TestAdapter": {
+            "target": "Package",
+            "version": "[3.17.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

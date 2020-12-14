@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9+ff5AK+4Qlso0/PHotk9mNKTxca04OVzQ/fJN2KhwSlTVGmY2TlunYEDXByu3un0MGNWEDNI70/mfZE3H+csw==",
+  "dgSpecHash": "gjPDxIwdbjot8C3GrYLqaWnEVsSqxMb2NqElLZ3mzIVue5cK913YY3AWD0wC6Tyn8a1n8IseoquhKlyJn3j0aA==",
   "success": true,
   "projectFilePath": "D:\\Bureaublad\\Race sim\\Race Simulator\\Race Simulator\\Race Simulator.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,7 @@
     "C:\\Users\\Tharner\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Tharner\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Tharner\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
-    "C:\\Users\\Tharner\\.nuget\\packages\\nunit3testadapter\\3.15.1\\nunit3testadapter.3.15.1.nupkg.sha512",
+    "C:\\Users\\Tharner\\.nuget\\packages\\nunit3testadapter\\3.17.0\\nunit3testadapter.3.17.0.nupkg.sha512",
     "C:\\Users\\Tharner\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Tharner\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\Tharner\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
