@@ -34,3 +34,21 @@ C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\D
 C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete
 C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.dll
 C:\Users\rubru\OneDrive\Documenten\RaceSimulator\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.pdb
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\nunit.engine.dll
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Controller.deps.json
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Controller.dll
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Controller.pdb
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\ControllerTest.dll
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Model.dll
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\ControllerTest.pdb
+D:\Bureaublad\Race sim\Race Simulator\Controller\bin\Debug\netcoreapp3.1\Model.pdb
+D:\Bureaublad\Race sim\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csprojAssemblyReference.cache
+D:\Bureaublad\Race sim\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfoInputs.cache
+D:\Bureaublad\Race sim\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfo.cs
+D:\Bureaublad\Race sim\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CoreCompileInputs.cache
+D:\Bureaublad\Race sim\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete
+D:\Bureaublad\Race sim\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.dll
+D:\Bureaublad\Race sim\Race Simulator\Controller\obj\Debug\netcoreapp3.1\Controller.pdb

@@ -4644,19 +4644,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Tharner\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "projectUniqueName": "D:\\Bureaublad\\Race sim\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
       "projectName": "ControllerTest",
-      "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\ControllerTest\\obj\\",
+      "projectPath": "D:\\Bureaublad\\Race sim\\Race Simulator\\ControllerTest\\ControllerTest.csproj",
+      "packagesPath": "C:\\Users\\Tharner\\.nuget\\packages\\",
+      "outputPath": "D:\\Bureaublad\\Race sim\\Race Simulator\\ControllerTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tharner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4669,8 +4669,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj": {
-              "projectPath": "D:\\Admin\\Bureaublad\\School\\Programmeren\\Race Simulator\\Race Simulator\\Model\\Model.csproj"
+            "D:\\Bureaublad\\Race sim\\Race Simulator\\Model\\Model.csproj": {
+              "projectPath": "D:\\Bureaublad\\Race sim\\Race Simulator\\Model\\Model.csproj"
             }
           }
         }

@@ -15,7 +15,6 @@ namespace Model
         {
             Name = name;
             Sections = ZetArrayOm(sections);
-
         }
 
         public LinkedList<Section> ZetArrayOm(SectionTypes[] sections)

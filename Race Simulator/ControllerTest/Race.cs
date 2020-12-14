@@ -17,13 +17,11 @@ namespace ControllerTest
         public Race(Track t, List<IParticipant> participants)
         {
             track = t;
-            
-           
+
             _positions = new Dictionary<Section, SectionData>();
             _random = new Random(DateTime.Now.Millisecond);
-            StartPositie(t,participants);
-          
-            
+            StartPosition(t, participants);
+
         }
 
         public SectionData GetSectionData(Section s)
@@ -40,25 +38,50 @@ namespace ControllerTest
             }
         }
 
-
         public void RandomizeEquipment()
         {
             foreach (IParticipant p in Participants)
             {
-                p.Equipment.Quality = _random.Next(1,5);
-                p.Equipment.Performance = _random.Next(1,5);
+                p.Equipment.Quality = _random.Next(1, 5);
+                p.Equipment.Performance = _random.Next(1, 5);
             }
         }
 
-        public void StartPositie(Track t, List<IParticipant> participants)
+        public void StartPosition(Track t, List<IParticipant> participants)
         {
-            
-            foreach (IParticipant p in participants)
+            int placedParticipants = 0;
+            foreach (Section s in t.Sections)
             {
-                GetSectionData(t.section);
+                if (s.SectionType.Equals(SectionTypes.StartGridHorizontal) || s.SectionType.Equals(SectionTypes.StartGridVertical))
+                {
+                    for (int i = 0; i < 2; i++)
+                    {
+                        try
+                        {
+                            if (placedParticipants == 0 || placedParticipants % 2 == 0)
+                            {
+                                GetSectionData(s).Right = participants[placedParticipants];
+                                GetSectionData(s).DistanceRight = 40;
+                            }
+                            else
+                            {
+                                GetSectionData(s).Left = participants[placedParticipants];
+                                GetSectionData(s).DistanceLeft = 20;
+                            }
+                            placedParticipants++;
+                        }
+                        catch (ArgumentOutOfRangeException)
+                        {
+                            continue;
+                        }
+                    }
+                }
+                else
+                {
+                    GetSectionData(s);
+                }
 
             }
-
         }
     }
 }

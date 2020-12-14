@@ -29,12 +29,18 @@ namespace Controller
             Driver driver3 = new Driver("Shrek", 0, car3, TeamColors.Green);
             Car car4 = new Car(3, 8, 55, false);
             Driver driver4 = new Driver("Igor", 0, car4, TeamColors.Yellow);
+            Car car5 = new Car(9, 10, 88, false);
+            Driver driver5 = new Driver("Mario", 0, car5, TeamColors.Red);
+            Car car6 = new Car(5, 8, 99, false);
+            Driver driver6 = new Driver("Luigi", 0, car6, TeamColors.Green);
 
             competitite.Participants.Add(driver1);
             competitite.Participants.Add(driver2);
             competitite.Participants.Add(driver3);
             competitite.Participants.Add(driver4);
-            
+            competitite.Participants.Add(driver5);
+            competitite.Participants.Add(driver6);
+
         }
 
         public static void VoegTrackToe()

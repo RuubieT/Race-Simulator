@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Controller;
 using ControllerTest;
 using Model;
 
@@ -10,108 +11,108 @@ namespace Race_Simulator
     {
         private static int x;
         private static int y;
-        private static int Richting;
+        private static int Direction;
 
-
+        //All the sections.
         #region graphics
         private static string[] _OostNaarZuid =
         {
             " /--", 
-            "/   ",
-            "|   ",
+            "/2  ",
+            "| 1 ",
             "|  /"
         };
         private static string[] _ZuidNaarOost =
         {
             " /--",
-            "/   ",
-            "|   ",
+            "/1  ",
+            "| 2 ",
             "|  /"
         };
         private static string[] _OostNaarNoord =
         {
             "|  \\",
-            "|   ",
-            "\\   ",
+            "|  2",
+            "\\1  ",
             " \\--"
         };
         private static string[] _NoordNaarOost =
         {
             "|  \\",
-            "|   ",
-            "\\   ",
+            "|  1",
+            "\\2  ",
             " \\--"
         };
         private static string[] _WestNaarZuid =
         {
             "--\\ ",
-            "   \\",
-            "   |",
+            "  1\\",
+            " 2 |",
             "\\  |"
         };
         private static string[] _ZuidNaarWest =
         {
             "--\\ ",
-            "   \\",
-            "   |",
+            "  2\\",
+            " 1 |",
             "\\  |"
         };
         private static string[] _NoordNaarWest = 
         { 
             "/  |",
-            "   |",
-            "   /",
+            "1  |",
+            " 2 /",
             "--/ "
         };
         private static string[] _WestNaarNoord =
         {
             "/  |",
-            "   |",
-            "   /",
+            "2  |",
+            " 1 /",
             "--/ "
         };
 
         private static string[] _lijnVerticaal =
         {
             "|  |",
-            "|  |",
-            "|  |",
+            "|1 |",
+            "| 2|",
             "|  |"
         };
         private static string[] _lijnHorizontaal =
         {
             "----",
-            "    ",
-            "    ",
+            "  1 ",
+            " 2  ",
             "----"
         };
 
         private static string[] _finishHorizontal =
         {
             "----", 
-            "  # ", 
-            "  # ", 
+            "  1#", 
+            " 2 #", 
             "----"
         };
         private static string[] _finishVertical =
         {
             "|##|",
-            "|  |", 
-            "|  |", 
+            "|1 |", 
+            "| 2|", 
             "|  |"
         };
         private static string[] _startGridHorizontal =
         {
             "----",
-            "  ] ",
-            " ]  ",
+            "  1]",
+            " 2] ",
             "----"
         };
         private static string[] _startGridVertical =
         {
-            "|  |",
             "|^ |",
-            "| ^|",
+            "|1^|",
+            "| 2 |",
             "|  |"
         };
 
@@ -130,11 +131,10 @@ namespace Race_Simulator
         {
             x = 0;
             y = 0;
-            Richting = 1;
+            Direction = 1;
         }
-
-      
-
+            
+        //Checking all options and drawing the whole track.
         public static void DrawTrack(Track track)
         {
             x = 30;
@@ -144,67 +144,67 @@ namespace Race_Simulator
                 switch (s.SectionType.ToString())
                 {
                     case "StartGridHorizontal":
-                        DrawSection(_startGridHorizontal, x, y);
+                        DrawSection(ReplacePlaceholders(_startGridHorizontal, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "StartGridVertical":
-                        DrawSection(_startGridVertical, x, y);
+                        DrawSection(ReplacePlaceholders(_startGridVertical, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "FinishHorizontal":
-                        DrawSection(_finishHorizontal, x, y);
+                        DrawSection(ReplacePlaceholders(_finishHorizontal, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "FinishVertical":
-                        DrawSection(_finishVertical, x, y);
+                        DrawSection(ReplacePlaceholders(_finishVertical, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "StraightHorizontal":
-                        DrawSection(_lijnHorizontaal, x, y);
+                        DrawSection(ReplacePlaceholders(_lijnHorizontaal, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "StraightVertical":
-                        DrawSection(_lijnVerticaal, x, y);
+                        DrawSection(ReplacePlaceholders(_lijnVerticaal, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "NoordOost":
-                        SetRichting(SectionTypes.NoordOost);
-                        DrawSection(_NoordNaarOost, x, y);
+                        SetDirection(SectionTypes.NoordOost);
+                        DrawSection(ReplacePlaceholders(_NoordNaarOost, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "NoordWest":
-                        SetRichting(SectionTypes.NoordWest);
-                        DrawSection(_NoordNaarWest, x, y);
+                        SetDirection(SectionTypes.NoordWest);
+                        DrawSection(ReplacePlaceholders(_NoordNaarWest, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "OostNoord":
-                        SetRichting(SectionTypes.OostNoord);
-                        DrawSection(_OostNaarNoord, x, y);
+                        SetDirection(SectionTypes.OostNoord);
+                        DrawSection(ReplacePlaceholders(_OostNaarNoord, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "OostZuid":
-                        SetRichting(SectionTypes.OostZuid);
-                        DrawSection(_OostNaarZuid, x, y);
+                        SetDirection(SectionTypes.OostZuid);
+                        DrawSection(ReplacePlaceholders(_OostNaarZuid, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "ZuidOost":
-                        SetRichting(SectionTypes.ZuidOost);
-                        DrawSection(_ZuidNaarOost, x, y);
+                        SetDirection(SectionTypes.ZuidOost);
+                        DrawSection(ReplacePlaceholders(_ZuidNaarOost, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "ZuidWest":
-                        SetRichting(SectionTypes.ZuidWest);
-                        DrawSection(_ZuidNaarWest, x, y);
+                        SetDirection(SectionTypes.ZuidWest);
+                        DrawSection(ReplacePlaceholders(_ZuidNaarWest, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "WestNoord":
-                        SetRichting(SectionTypes.WestNoord);
-                        DrawSection(_WestNaarNoord, x, y);
+                        SetDirection(SectionTypes.WestNoord);
+                        DrawSection(ReplacePlaceholders(_WestNaarNoord, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "WestZuid":
-                        SetRichting(SectionTypes.WestZuid);
-                        DrawSection(_WestNaarZuid, x, y);
+                        SetDirection(SectionTypes.WestZuid);
+                        DrawSection(ReplacePlaceholders(_WestNaarZuid, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
 
@@ -213,6 +213,8 @@ namespace Race_Simulator
             }
 
         }
+
+        //Making sure after a section is drawn everything updates.
         public static void DrawSection(string[] section, int x, int y)
         {
             Console.CursorTop = y;
@@ -223,40 +225,45 @@ namespace Race_Simulator
             }
         }
 
-        public static void SetRichting(SectionTypes sectiontype)
+        //Confirms which direction a new sections needs to be built at.
+        public static void SetDirection(SectionTypes sectiontype)
         {
             switch (sectiontype)
             {
                 case SectionTypes.NoordOost:
-                    Richting = 1;
+                    Direction = 1;
                     break;
                 case SectionTypes.NoordWest:
-                    Richting = 3;
+                    Direction = 3;
                     break;
                 case SectionTypes.OostNoord:
-                    Richting = 0;
+                    Direction = 0;
                     break;
                 case SectionTypes.OostZuid:
-                    Richting = 2;
+                    Direction = 2;
                     break;
                 case SectionTypes.ZuidOost:
-                    Richting = 1;
+                    Direction = 1;
                     break;
                 case SectionTypes.ZuidWest:
-                    Richting = 3;
+                    Direction = 3;
                     break;
                 case SectionTypes.WestNoord:
-                    Richting = 0;
+                    Direction = 0;
                     break;
                 case SectionTypes.WestZuid:
-                    Richting = 2;
+                    Direction = 2;
+                    break;
+                default:
+                    Direction = 1;
                     break;
             }
         }
 
+        //After a new direction is given update all the positions.
         public static void SetXenY()
         {
-            switch (Richting)
+            switch (Direction)
             {
                 case 0:
                     y = y - 4;
@@ -273,5 +280,62 @@ namespace Race_Simulator
             }
         }
 
+        //Visualising participants.
+        public static string[] ReplacePlaceholders(string[] section, IParticipant right, IParticipant left)
+        {
+            char nameLeft;
+            char nameRight;
+            string[] result = { "", "", "", "" };
+
+            if (left is null && !(right is null))
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    string s = section[i];
+                    nameRight = right.Name[0];
+                    if (right.Equipment.IsBroken)
+                        nameRight = 'X';
+
+                    result[i] = s.Replace('1', nameRight).Replace('2', ' ');
+                }
+                return result;
+            }
+            if (!(left is null) && right is null)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    string s = section[i];
+                    nameLeft = left.Name[0];
+                    if (left.Equipment.IsBroken)
+                        nameLeft = 'X';
+
+                    result[i] = s.Replace('1', ' ').Replace('2', nameLeft);
+                }
+                return result;
+            }
+            if (left is null && right is null)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    string s = section[i];
+
+                    result[i] = s.Replace('1', ' ').Replace('2', ' ');
+                }
+                return result;
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                string s = section[i];
+                nameRight = right.Name[0];
+                nameLeft = left.Name[0];
+                if (right.Equipment.IsBroken)
+                    nameRight = 'X';
+                if (left.Equipment.IsBroken)
+                    nameLeft = 'X';
+
+                result[i] = s.Replace('1', nameRight).Replace('2', nameLeft);
+            }
+            return result;
+        }
     }
 }
