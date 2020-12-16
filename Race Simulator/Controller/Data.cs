@@ -9,17 +9,17 @@ namespace Controller
 {
     public static class Data
     {
-        public static Competition competitite;
+        public static Competition competition;
         public static Race CurrentRace;
         
         public static void Initialize()
         {
-            competitite = new Competition();
-            VoegDeelnemersToe();
-            VoegTrackToe();
+            competition = new Competition();
+            AddParticipants();
+            AddTrack();
         }
 
-        public static void VoegDeelnemersToe()
+        public static void AddParticipants()
         {
             Car car1 = new Car(7, 5, 60, false);
             Driver driver1 = new Driver("Ruben", 0, car1, TeamColors.Red);
@@ -34,16 +34,16 @@ namespace Controller
             Car car6 = new Car(5, 8, 99, false);
             Driver driver6 = new Driver("Luigi", 0, car6, TeamColors.Green);
 
-            competitite.Participants.Add(driver1);
-            competitite.Participants.Add(driver2);
-            competitite.Participants.Add(driver3);
-            competitite.Participants.Add(driver4);
-            competitite.Participants.Add(driver5);
-            competitite.Participants.Add(driver6);
+            competition.Participants.Add(driver1);
+            competition.Participants.Add(driver2);
+            competition.Participants.Add(driver3);
+            competition.Participants.Add(driver4);
+            competition.Participants.Add(driver5);
+            competition.Participants.Add(driver6);
 
         }
 
-        public static void VoegTrackToe()
+        public static void AddTrack()
         {
             SectionTypes[] basic = new SectionTypes[]
             {
@@ -51,42 +51,42 @@ namespace Controller
                 SectionTypes.StartGridHorizontal, 
                 SectionTypes.StartGridHorizontal, 
                 SectionTypes.FinishHorizontal, 
-                SectionTypes.WestZuid,
+                SectionTypes.WestSouth,
                 SectionTypes.StraightVertical, 
                 SectionTypes.StraightVertical, 
                 SectionTypes.StraightVertical, 
-                SectionTypes.NoordWest,
+                SectionTypes.NorthWest,
                 SectionTypes.StraightHorizontal, 
                 SectionTypes.StraightHorizontal, 
                 SectionTypes.StraightHorizontal, 
-                SectionTypes.OostNoord,
+                SectionTypes.EastNorth,
                 SectionTypes.StraightVertical, 
                 SectionTypes.StraightVertical, 
                 SectionTypes.StraightVertical, 
-                SectionTypes.ZuidOost
+                SectionTypes.SouthEast
             };
             Track oostendorp = new Track("Oostendorp",
                 new SectionTypes[] { SectionTypes.StartGridHorizontal, SectionTypes.StartGridHorizontal, SectionTypes.StartGridHorizontal,SectionTypes.FinishHorizontal, SectionTypes.StraightHorizontal,
-                    SectionTypes.WestNoord, SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.ZuidOost,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.WestZuid,SectionTypes.StraightVertical, SectionTypes.NoordWest,
+                    SectionTypes.WestNorth, SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.SouthEast,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.WestSouth,SectionTypes.StraightVertical, SectionTypes.NorthWest,
                     SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,
-                    SectionTypes.OostZuid,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical, SectionTypes.NoordOost,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal, SectionTypes.WestZuid,
-                    SectionTypes.NoordWest, SectionTypes.OostZuid, SectionTypes.NoordOost, SectionTypes.WestZuid, SectionTypes.NoordWest,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,
-                    SectionTypes.OostNoord,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical, SectionTypes.ZuidOost,SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal});
+                    SectionTypes.EastSouth,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical, SectionTypes.NorthEast,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal, SectionTypes.WestSouth,
+                    SectionTypes.NorthWest, SectionTypes.EastSouth, SectionTypes.NorthEast, SectionTypes.WestSouth, SectionTypes.NorthWest,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,SectionTypes.StraightHorizontal,
+                    SectionTypes.EastNorth,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical,SectionTypes.StraightVertical, SectionTypes.SouthEast,SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal, SectionTypes.StraightHorizontal});
 
             
             Track track2 = new Track("Track 2", basic);
 
 
-            competitite.Tracks.Enqueue(oostendorp);
-            competitite.Tracks.Enqueue(track2);
+            competition.Tracks.Enqueue(oostendorp);
+            competition.Tracks.Enqueue(track2);
            
         }
 
         public static void NextRace()
         {
-            List<IParticipant> Participants = competitite.Participants;
+            List<IParticipant> Participants = competition.Participants;
 
-            CurrentRace = new Race(competitite.NextTrack(), Participants);
+            CurrentRace = new Race(competition.NextTrack(), Participants);
 
         }
 

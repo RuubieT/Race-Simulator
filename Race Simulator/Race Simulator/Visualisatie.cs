@@ -132,6 +132,7 @@ namespace Race_Simulator
             x = 0;
             y = 0;
             Direction = 1;
+            Data.CurrentRace.DriversChanged += OnDriversChanged;
         }
             
         //Checking all options and drawing the whole track.
@@ -168,42 +169,42 @@ namespace Race_Simulator
                         SetXenY();
                         break;
                     case "NoordOost":
-                        SetDirection(SectionTypes.NoordOost);
+                        SetDirection(SectionTypes.NorthEast);
                         DrawSection(ReplacePlaceholders(_NoordNaarOost, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "NoordWest":
-                        SetDirection(SectionTypes.NoordWest);
+                        SetDirection(SectionTypes.NorthWest);
                         DrawSection(ReplacePlaceholders(_NoordNaarWest, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "OostNoord":
-                        SetDirection(SectionTypes.OostNoord);
+                        SetDirection(SectionTypes.EastNorth);
                         DrawSection(ReplacePlaceholders(_OostNaarNoord, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "OostZuid":
-                        SetDirection(SectionTypes.OostZuid);
+                        SetDirection(SectionTypes.EastSouth);
                         DrawSection(ReplacePlaceholders(_OostNaarZuid, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "ZuidOost":
-                        SetDirection(SectionTypes.ZuidOost);
+                        SetDirection(SectionTypes.SouthEast);
                         DrawSection(ReplacePlaceholders(_ZuidNaarOost, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "ZuidWest":
-                        SetDirection(SectionTypes.ZuidWest);
+                        SetDirection(SectionTypes.SouthWest);
                         DrawSection(ReplacePlaceholders(_ZuidNaarWest, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "WestNoord":
-                        SetDirection(SectionTypes.WestNoord);
+                        SetDirection(SectionTypes.WestNorth);
                         DrawSection(ReplacePlaceholders(_WestNaarNoord, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
                     case "WestZuid":
-                        SetDirection(SectionTypes.WestZuid);
+                        SetDirection(SectionTypes.WestSouth);
                         DrawSection(ReplacePlaceholders(_WestNaarZuid, Data.CurrentRace.GetSectionData(s).Right, Data.CurrentRace.GetSectionData(s).Left), x, y);
                         SetXenY();
                         break;
@@ -230,28 +231,28 @@ namespace Race_Simulator
         {
             switch (sectiontype)
             {
-                case SectionTypes.NoordOost:
+                case SectionTypes.NorthEast:
                     Direction = 1;
                     break;
-                case SectionTypes.NoordWest:
+                case SectionTypes.NorthWest:
                     Direction = 3;
                     break;
-                case SectionTypes.OostNoord:
+                case SectionTypes.EastNorth:
                     Direction = 0;
                     break;
-                case SectionTypes.OostZuid:
+                case SectionTypes.EastSouth:
                     Direction = 2;
                     break;
-                case SectionTypes.ZuidOost:
+                case SectionTypes.SouthEast:
                     Direction = 1;
                     break;
-                case SectionTypes.ZuidWest:
+                case SectionTypes.SouthWest:
                     Direction = 3;
                     break;
-                case SectionTypes.WestNoord:
+                case SectionTypes.WestNorth:
                     Direction = 0;
                     break;
-                case SectionTypes.WestZuid:
+                case SectionTypes.WestSouth:
                     Direction = 2;
                     break;
                 default:
@@ -336,6 +337,11 @@ namespace Race_Simulator
                 result[i] = s.Replace('1', nameRight).Replace('2', nameLeft);
             }
             return result;
+        }
+
+        public static void OnDriversChanged(object o, DriversChangedEventArgs e)
+        {
+            DrawTrack(e.track);
         }
     }
 }

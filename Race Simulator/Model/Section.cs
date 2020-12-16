@@ -9,17 +9,17 @@ namespace Model
         StraightHorizontal,
         StraightVertical,
 
-        NoordOost,
-        NoordWest,
+        NorthEast,
+        NorthWest,
 
-        OostNoord,
-        OostZuid,
+        EastNorth,
+        EastSouth,
 
-        ZuidOost,
-        ZuidWest,
+        SouthEast,
+        SouthWest,
 
-        WestNoord,
-        WestZuid,
+        WestNorth,
+        WestSouth,
 
         StartGridHorizontal,
         StartGridVertical,

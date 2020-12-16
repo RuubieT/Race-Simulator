@@ -16,8 +16,8 @@ namespace ControllerTest
         {
             SectionTypes[] test = new SectionTypes[]
             {
-                SectionTypes.StartGridHorizontal, SectionTypes.FinishHorizontal, SectionTypes.WestZuid, SectionTypes.StraightVertical, SectionTypes.StraightVertical, SectionTypes.NoordWest, SectionTypes.StraightHorizontal,
-                SectionTypes.StraightHorizontal, SectionTypes.OostNoord, SectionTypes.StraightVertical, SectionTypes.StraightVertical, SectionTypes.ZuidOost
+                SectionTypes.StartGridHorizontal, SectionTypes.FinishHorizontal, SectionTypes.WestSouth, SectionTypes.StraightVertical, SectionTypes.StraightVertical, SectionTypes.NorthWest, SectionTypes.StraightHorizontal,
+                SectionTypes.StraightHorizontal, SectionTypes.EastNorth, SectionTypes.StraightVertical, SectionTypes.StraightVertical, SectionTypes.SouthEast
             };
             track = new Track("Test", test);
         }
